@@ -1,0 +1,167 @@
+/* Styling for the main navigation menu */
+body{
+  background-image:url('Image/karbackground2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header {
+    grid-area: header;
+    color:rgb(121, 146, 255);
+    text-align: center;
+    padding: 5px;
+  }
+.menu {
+    float:center ;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+  }
+ .menu li {
+    display: inline-table;
+    color: #ffffff;
+    padding: 35px;
+  }
+  .menu a{
+    color: #fff;
+    text-decoration: underline;
+    
+  }
+  .menu a:hover{
+    padding: 6px;
+    background-color:black;
+    border:solid white;
+    border-radius: 10px;
+  }
+  
+  /* Μενου επιλογής απο τις 5 επιλογες*/
+  aside {
+    float:left;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  ul.nav {
+    float: left;
+    width: auto;
+    height: auto;
+    
+    margin-right: 300px;
+    margin-bottom: 5px;
+
+    }
+
+    ul.nav li {
+    display: block;
+    color: black;
+    padding: 4px;
+    }
+   ul.nav li a {
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+   ul.nav li a:hover {
+    background-color:black;
+    color: white;
+    border-style:solid;
+    border-color:rgb(121, 146, 255);
+    border-width: 3px;
+    }
+    
+    .main {
+        margin-left: 150px;
+        padding: 10px;
+        height: 100px;
+        }
+        b{
+            color:rgb(121, 146, 255);
+            text-decoration: underline;
+            text-align: center;
+        }
+        p {
+          width: 900px;
+          color:white;
+        }
+
+        img{
+          width: auto;
+          height: auto;
+          object-fit:contain;
+        }
+        
+        b.flex{
+          display: flex;
+          gap: 2em;
+          flex-grow: 1;
+          flex-shrink: 0;
+        }
+        *{
+          margin: 0;
+          padding: 0;
+          }
+          .wrapper{
+          width:100vw;
+          height: 100vh;
+          display: grid;
+          grid-template-rows: auto auto 1fr auto;
+          grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'aside aside main main main main'
+          'footer footer footer footer footer footer';
+          }
+          header, nav, aside, main, footer {
+          border: 0px solid brown;
+          
+          height: auto;
+          }
+          header {grid-area: header;} 
+          nav {grid-area: nav;}
+          aside {grid-area: aside;}
+          main {grid-area: main;}
+          footer {grid-area: footer;}
+          main, aside{
+          height: calc(200vh - 68px);
+          }
+          footer{
+             float: center;
+             width: auto;
+            height: auto;
+    
+            margin-right: auto;
+            margin-bottom: auto;
+          }
+          footer p{
+            float:right ;
+            background-color: #eeeeee9a;
+            
+          }
+           /* CSS for desktop */
+    @media only screen and (min-width: 600px) {
+      
+    }
+    /* CSS for tablet */
+    @media only screen and (min-width: 480px) and (max-width: 599px) {
+      
+    }
+    /* CSS for mobile */
+    @media only screen and (max-width: 479px) {
+      
+    }
+          
+          
+          
+          
+          
+          
+       
+        
